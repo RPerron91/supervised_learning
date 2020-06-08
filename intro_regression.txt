@@ -1,27 +1,37 @@
-Let's assume that you have World Bank data on financial, economic and social indicators for several countries. You want to measure the factors that affect the level of development in these countries. To this end, you decide to use per capita income as a proxy for the development level, which is defined as the national income divided by the population. You want to use some features in your dataset to predict per capita income. Is this task a classification or a regression task? Why?
+Let's assume that you have World Bank data on financial, economic and social indicators for several countries. You want to measure the 
+factors that affect the level of development in these countries. To this end, you decide to use per capita income as a proxy for the 
+development level, which is defined as the national income divided by the population. You want to use some features in your dataset to 
+predict per capita income. Is this task a classification or a regression task? Why?
 
-This is a regression task because 'per capita income' is a continuous property that would be too inefficient to categorize individually for classification to be used. Regression models are better suited for making predictions for continuous features because their estimator is also continuous, so any specific prediction would correspond to a point on that continuous estimator.
+This is a regression task because 'per capita income' is a continuous property that would be too inefficient to categorize individually 
+for classification to be used. Regression models are better suited for making predictions for continuous features because their 
+estimator is also continuous, so any specific prediction would correspond to a point on that continuous estimator.
 
 
 
 
 Which of the following arguments are false and why?
 
-    OLS is a special type of linear regression models
+    OLS is a special type of linear regression models (FALSE)
+    OLS: ordinary least sqares is an optimization algorithm for finding the slope and position of the estimator.
+
+    Regression models become useless if they don’t meet the assumptions of linear regression. (FALSE)
+    You can use linear regression even when every assumption isnt necessarily met
+
+    Estimation and prediction are the same thing in the context of linear regression models. (FALSE)
+    The estimation is the slope and position of the line that predicts an outcome, but a prediction just corresponds to one coordinate 
+    pair on that line.
+
+    Linear regression is only one kind of regression model. Regression problems can also be solved with other kind of models like 
+    Support Vector Machines or Random Forests.
     
 
-    Regression models become useless if they don’t meet the assumptions of linear regression.
-    
-
-    Estimation and prediction are the same thing in the context of linear regression models.
-    
-
-    Linear regression is only one kind of regression model. Regression problems can also be solved with other kind of models like Support Vector Machines or Random Forests.
-    
 
 
 
+Assume that your project manager wants you to discover which free services your company offers make your customers buy more of your paid 
+services. Formulate this task as a regression problem and write down the potential outcome and features that you’d like to work on.
 
-Assume that your project manager wants you to discover which free services your company offers make your customers buy more of your paid services. Formulate this task as a regression problem and write down the potential outcome and features that you’d like to work on.
-
-In a regression model, the outcome estimator would be looking at the total amount each customer spent on paid services. Features to be used for comparison would be each of the different paid servies and free servies. If the features are saved categorically, you could one-hot-encode any of the services to compute their relationship to the total price that a customer spends on paid services.
+In a regression model, the outcome estimator would be looking at the total amount each customer spent on paid services. Features to be 
+used for comparison would be each of the different paid servies and free servies. If the features are saved categorically, you could 
+one-hot-encode any of the services to compute their relationship to the total price that a customer spends on paid services.
